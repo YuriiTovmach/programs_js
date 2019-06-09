@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Автоматизація системи поливу рослин</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_2.css">
+
+    <script src="1.js" defer></script>
+    <script src="2.js" defer></script>
+    <script src="3.js" defer></script>
+</head>
+<body>
+
+<div class="col-lg-12 paddings" >
+
+        <ul id="slides">
+            <li class="slide showing"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+        </ul>
+
+
+
+
+    <h3>Умови:</h3>
+    <ol>
+        <li> Якщо тепло i пасмурно або не дуже сонячно, то поливаємо всередньому; </li>
+        <li> Якщо тепло i сонячно, то поливаємо вище середнього; </li>
+        <li> Якщо тепло i дуже сонячно, то поливаємо сильно; </li>
+        <li> Якщо прохолодно i дуже пасмурно або пасмурно, то не поливаємо; </li>
+        <li> Якщо прохолодно i сонячно або дуже сонячно, то поливаємо нижче середнього.</li>
+    </ol>
+
+    <h4>На систему поливу рослин впливають показники температури зовнi ( вiд +10◦ C до +40 ◦ C) та освітлення
+        (вiд 100 лк до 1000 лк, де лк -люкс) . </h4>
+    <marquee  behavior="scroll"><h4>Мікроклімат і поливна система у Вашій теплиці!</h4></marquee>
+
+
+
+
+     <p>Температура ( ◦C ): <input type="text" id="num1" placeholder="вiд +10◦ C до +40 ◦ C"></p>
+
+     <hr>
+
+     <p>Освітлення ( Лк ): <input type="text" id="num2" placeholder="вiд 100 лк до 1000 лк"></p>
+
+     <button onclick="f1()">click</button>
+
+
+    <hr>
+    <p id="one"></p>
+    <hr>
+
+</div>
+</body>
+</html>
